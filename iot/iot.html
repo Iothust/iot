@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="iot.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/site.css">
+    <title> Phòng làm việc</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            color :#777;
+        }
+        .headline{
+            text-align: center;
+            margin: 30px 60px;
+            margin-top: 5px;
+            font-family: "Poppins", sans-serif;
+        }
+        #wrapper{
+            max-width:1170px;
+            margin:0 auto;
+        }
+        h3{
+            font-size:20px;
+            color: #111;
+            border: 3px solid;
+            border-image:linear-gradient(45deg,green,yellow,red,blue,violet, white) 12;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            display: inline-block;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+        }
+        h4{
+            font-size:16px;
+            list-style: none;
+            color: #111;
+            margin-top: -60px;
+            margin-bottom: 40px;
+            padding-left: 1100px ;
+            display: flex;
+            color: red;
+            font-family: "Poppins", sans-serif;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: space-between;
+            font-family: "Poppins", sans-serif;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 50px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        ul.products li img{
+            max-width: 68%;
+            height: auto;
+        }
+        ul.control-img{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: space-between;
+            margin-bottom: 10px;
+        }
+        ul.control-img li img{
+            max-width: 12%;
+            height: auto;
+            padding-left: 495px;
+            /* padding-right: 200px; */
+        }
+        ul.control-button{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: space-between;
+            padding-left: 400px;
+        }
+        ul.buttons{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: space-between;
+        }
+        ul.buttons li{
+            flex-basis: 25%;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+        ul.text{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: space-between;
+            vertical-align: top;
+            text-align: center; 
+            color: #000;
+
+        }
+        ul.text li{
+            flex-basis: 20%;
+            padding-left: 140px;
+            padding-right: 00px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+	<div id="wrapper">
+        <div class="headline"> 
+            <h3> Nhóm 5 - Phòng làm việc</h3>
+        </div>
+        <div class="signout">
+            <h4 id="signout" class="signout">Sign out</h4>
+        </div>
+
+        <ul class="text">
+            <li>
+                <h2 class="text-item">CB CHUYỂN ĐỘNG: <span id = "chuyendong">00</span></h2>
+            </li>
+            <li>
+                <h2 class="text-item">CB ĐỘ ẨM: <span id = "doam">00</span> %</h2>
+            </li>
+            <li>
+                <h2 class="text-item">CB KHÓI: <span id = "khoi">00</span> </h2>
+            </li>
+        </ul>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img id="quatId_01" src="./img/fanon.png">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img id="bomId_01" src="./img/pumpon.png">
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img id="treeId_01"src="./img/treeon.png" >
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img id="tableId_01"src="./img/tableon.png">
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="buttons">
+            <li>
+                <div class="button-item">
+                    <button style="font-size :15px; height:50px;width:90px; border: 2px solid #DC143C; border-radius: 12px;" id = "btnOnId_01">ON</button>
+			        <button style="font-size :15px; height:50px;width:90px; border: 2px solid MidnightBlue; border-radius: 12px;" id = "btnOffId_01">OFF</button>
+                </div>
+            </li>
+            <li>
+                <div class="button-item">
+                    <button style="font-size :15px; height:50px;width:90px; border: 2px solid #DC143C; border-radius: 12px;" id = "btnOnId_02">ON</button>
+			        <button style="font-size :15px; height:50px;width:90px; border: 2px solid MidnightBlue; border-radius: 12px;" id = "btnOffId_02">OFF</button>
+                </div>
+            </li>
+            <li>
+                <div class="button-item">
+                    <button style="font-size :15px; height:50px;width:90px; border: 2px solid #DC143C; border-radius: 12px;" id = "btnOnId_03">ON</button>
+			        <button style="font-size :15px; height:50px;width:90px; border: 2px solid MidnightBlue; border-radius: 12px;" id = "btnOffId_03">OFF</button>
+                </div>
+            </li>
+            <li>
+                <div class="button-item">
+                    <button style="font-size :15px; height:50px;width:90px; border: 2px solid #DC143C; border-radius: 12px;" id = "btnOnId_04">ON</button>
+			        <button style="font-size :15px; height:50px;width:90px; border: 2px solid MidnightBlue; border-radius: 12px;" id = "btnOffId_04">OFF</button>
+                </div>
+            </li> 
+        </ul>
+        <ul class="control-img">
+            <li>
+                <div class="control-img">
+                    <div class="control-top">
+                        <a href="" class="control-thumb">
+                            <img id="dkId_01" src="./img/automatic.png">
+                        </a>
+                    </div>
+                    <div class="control-info">
+                        <a href="" class="control-cat"></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="control-button">
+            <li>
+                <div class="control-button">
+                    <button style="font-size :15px; height:50px;width:150px; border: 2px solid #DC143C; border-radius: 12px;" id = "btnOnId_05">TỰ ĐỘNG</button>
+			        <button style="font-size :15px; height:50px;width:150px; border: 2px solid MidnightBlue; border-radius: 12px;" id = "btnOffId_05">THỦ CÔNG</button>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+	<script src ="iot.js"></script>
+</body>
+<script type="module">
+signout.addEventListener('click', (e) =>{
+   window.location = "../index.html"
+}); 
+</script>
+</html>
