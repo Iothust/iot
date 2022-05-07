@@ -74,7 +74,8 @@ login.addEventListener('click', (e) =>{
         last_login: dt,
       })
       showLoading();
-      setTimeout(() =>{window.location = "./iot/iot.html"},3000);  
+      setTimeout(() =>{window.location = "./iot/iot.html"},3000);
+      alert("Đăng nhập thành công");
       
     })
       .catch((error) => {
@@ -83,7 +84,7 @@ login.addEventListener('click', (e) =>{
       alert(errorMessage)
       hideLoading();
   });
-  alert("Đăng nhập thành công")
+  
 
 });
 signup.addEventListener('click', (e) =>{
